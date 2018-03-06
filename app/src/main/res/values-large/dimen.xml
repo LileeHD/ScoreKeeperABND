@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_score_size_large">70sp</dimen>
+    <dimen name="title_size_large">60sp</dimen>
+    <dimen name="text_size_large">40sp</dimen>
+    <dimen name="btn_text_size_large">35sp</dimen>
+    <dimen name="vs_size_large">80sp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="padding_layout_large">40dp</dimen>
+    <dimen name="margin_vertical_large">40dp</dimen>
+</resources>

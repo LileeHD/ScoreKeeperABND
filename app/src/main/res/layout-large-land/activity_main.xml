@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/padding_layout_ll"
+    android:paddingTop="@dimen/padding_layout_ll">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/owlogo"/>
+
+    <LinearLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/team_a"
+                    android:textAlignment="center"
+                    android:textColor="#42474B"
+                    android:textSize="@dimen/title_size_ll" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/team_a"
+                    android:src="@drawable/teama" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/score"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/scorea" />
+
+                <TextView
+                    android:id="@+id/score_team_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/score"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/big_score_size_ll" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bignoodletoo"
+                android:gravity="center"
+                android:onClick="addOnePointA"
+                android:text="@string/plus_1_kill"
+                android:textSize="@dimen/btn_text_size_ll" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/click_counter_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#42474B"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/score"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_ll" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#42474B"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/team"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_ll" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bignoodletoo"
+                android:onClick="addFourPointsA"
+                android:text="@string/plus_4_kills"
+                android:textSize="@dimen/btn_text_size_ll" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/team_b"
+                    android:src="@drawable/teamb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/team_b"
+                    android:textAlignment="center"
+                    android:textColor="#42474B"
+                    android:textSize="@dimen/title_size_ll" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/score"
+                    android:src="@drawable/scoreb" />
+
+                <TextView
+                    android:id="@+id/score_team_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/score"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/big_score_size_ll" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bignoodletoo"
+                android:gravity="center"
+                android:onClick="addOnePointB"
+                android:text="@string/plus_1_kill"
+                android:textSize="@dimen/btn_text_size_ll" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FEA502"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/kill"
+                    android:textAlignment="textEnd"
+                    android:textColor="#42474B"
+                    android:textSize="@dimen/text_size_ll" />
+
+                <TextView
+                    android:id="@+id/click_counter_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FEA502"
+                    android:fontFamily="@font/bignoodletoo"
+                    android:text="@string/score"
+                    android:textAlignment="center"
+                    android:textColor="#42474B"
+                    android:textSize="@dimen/text_size_ll" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bignoodletoo"
+                android:gravity="center"
+                android:onClick="addFourPointsB"
+                android:text="@string/plus_4_kills"
+                android:textSize="@dimen/btn_text_size_ll" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bignoodletoo"
+        android:paddingBottom="90dp"
+        android:text="@string/vs"
+        android:textAlignment="center"
+        android:textColor="#42474B"
+        android:textSize="@dimen/vs_size_ll" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:background="#E13516"
+        android:fontFamily="@font/bignoodletoo"
+        android:onClick="resetGame"
+        android:text="@string/reset"
+        android:textSize="@dimen/text_size_ll" />
+</RelativeLayout>

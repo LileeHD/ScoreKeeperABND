@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#00BFF8</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#00BFF8</item>
+        <!-- Background and text color in the app -->
+        <item name="android:textColor">#fff</item>
+    </style>
+</resources>

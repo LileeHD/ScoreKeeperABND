@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Overwatch game 4v4</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="score">0</string>
+    <string name="vs">VS  </string>
+    <string name="plus_1_kill">+1 Elimination</string>
+    <string name="plus_4_kills">+4 Eliminations</string>
+    <string name="team">Team \u0020</string>
+    <string name="kill">\u0020Kill \u0020</string>
+    <string name="reset">New Game</string>
+    <string name="logo">OW Logo</string>
+    <string name="score_bg_b">BG score b</string>
+    <string name="score_bg_a">BG score a</string>
+
+</resources>

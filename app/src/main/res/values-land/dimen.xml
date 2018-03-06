@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_score_size_land">50sp</dimen>
+    <dimen name="title_size_land">40sp</dimen>
+    <dimen name="text_size_land">25sp</dimen>
+    <dimen name="btn_text_size_land">20sp</dimen>
+    <dimen name="vs_size_land">60sp</dimen>
+    <dimen name="margin_land">8dp</dimen>
+    <dimen name="padding_layout_land">8dp</dimen>
+    <dimen name="padding_bottom_land">80dp</dimen>
+</resources>
